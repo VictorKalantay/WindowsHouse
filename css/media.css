@@ -208,6 +208,9 @@
     left: -25px;
   }
 
+  .questions__content {
+    padding: 30px;
+  }
 
 
 }
@@ -368,7 +371,9 @@
   .about__advantage-title {
     font-size: 12px;
   }
-
+  .questions__title {
+    margin-bottom: 15px;
+  }
 }
 /*---Экстрамалые девайсы («телефоны», < 576px)-----*/
 @media (max-width: 575px) {
@@ -848,4 +853,41 @@
     display: none;
   }
 
+  .questions__content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .questions__question.active:before {
+    right: 20px;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .questions__question.active:after {
+    right: 12px;
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  .questions__question:before {
+    right: 21px;
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  .questions__question:after {
+    right: 10px;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .questions__question {
+    font-size: 14px;
+    padding:20px 40px 20px 10px;
+    text-align: center;
+  }
+  .questions__question.active p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }
