@@ -1,4 +1,4 @@
-export const videoImsert = () => {
+export const videoInsert = () => {
   const conteiner = document.querySelector('.card__video-container')
   const poster = document.querySelector('.card__video-poster')
   const playButton = document.querySelector('.card__video-play')

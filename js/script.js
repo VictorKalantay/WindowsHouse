@@ -1,6 +1,7 @@
 "use strict"
 import {cardsCarousel} from "./cards_carousel.js";
-import {videoImsert} from "./videoinsert.js";
+import {videoInsert} from "./videoinsert.js";
+import saveFormData from "./save_form_data.js";
 
 
 // Меню бургер
@@ -45,7 +46,6 @@ const modalBody = document.querySelectorAll('[data-popup]')
 let currentPopup
 let closePopup
 let popupLink // Выносим переменную за функцию чтоб вставить в запуск попапа.
-let stopSlider
 popupLinkButton.forEach((el) => {
   el.addEventListener('click', (event) => {     //Получаем кнопку по которой тыцнули
     popupLink = event.currentTarget.getAttribute('data-popupLink');   //в переменную получаем атрибут линки
@@ -55,23 +55,19 @@ popupLinkButton.forEach((el) => {
     currentPopup = document.querySelector(`[data-popup="${popupLink}"]`);// Получили в переменную нужный попап у которого дата совпадает с дата линки
     closePopup = () => {
       currentPopup.classList.remove('open');
-      stopSlider = true;
     };
     currentPopup.classList.add('open');
-    stopSlider = false;
     new Slider(`${popupLink}`);
-
   });
 
 });
 document.addEventListener("click", (e) => {
   if (e.target.closest("[data-close]")) {
     closePopup()
-  }
+   }
   if (!e.target.closest('.popup__content') && e.target.closest("[data-closeArea]")) {
     closePopup()
   }
-  e.preventDefault();
 });
 document.addEventListener('keydown', (e) => {
   if (e.which === 27) {
@@ -226,7 +222,11 @@ const questionsBlockDisclosure = () => {
 }
 
 
-questionsBlockDisclosure()
-videoImsert()
-cardsCarousel()
 
+
+
+
+questionsBlockDisclosure()
+videoInsert()
+cardsCarousel()
+saveFormData()

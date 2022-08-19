@@ -36,7 +36,7 @@
         <li><a class="nav__link" data-goto=".products__container" href="#">Продукция</a></li>
         <li><a class="nav__link" data-goto=".about__container" href="#">О компании</a></li>
         <li><a class="nav__link" data-goto=".questions__container" href="#">Вопрос-ответ</a></li>
-        <li><a class="nav__link" data-goto=".contacts__container" href="#">Контакты</a></li>
+        <li><a class="nav__link" data-goto=".contacts-block__container" href="#">Контакты</a></li>
       </ul>
       <div class="buttons-block">
         <div class="button button--froze" data-popuplink="froze">
@@ -78,24 +78,24 @@
         <div class="froze__content">
           <div class="froze__title">Вызвать замерщика на дом</div>
           <div class="froze__form">
-            <form action="#" name="user" method="post">
+            <form name="user">
               <div class="froze__inputs">
                 <label>
-                  <input type="text" placeholder="Представтесь, пожалуйста">
+                  <input name="name" type="text" placeholder="Представтесь, пожалуйста">
                 </label>
                 <label>
-                  <input type="number" placeholder="Номер телефона">
+                  <input name="tel" type="number" placeholder="Номер телефона">
                 </label>
                 <label>
-                  <input type="email" placeholder="E-mail">
+                  <input name="email" type="email" placeholder="E-mail">
                 </label>
                 <label class="froze__checkbox-container">
-                  <input type="checkbox">
+                  <input type="checkbox" name="checkbox">
                   <div class="froze__checkbox-agree">Я согласен(на) на обработку персональных данных в соответствии с
                     <span class="checkbox-span--privacy">политикой конфидициальности</span></div>
                 </label>
 
-                <div class="froze__button"><input type="submit" value="Отправить"></div>
+                <div class="froze__button "><input type="submit" value="Отправить"></div>
               </div>
             </form>
           </div>
@@ -551,7 +551,8 @@
         </div>
         <div class="questions__question">
           <h5>Зачем вызывать замерщика? Я могу дать размеры</h5>
-          <p>Наш замерщик быстро и профессионально выполнит свою работу, покажет Вам образцы и сможет по месту заключить контракт. Но мы так же можем изготовить окна по вашим замерам</p>
+          <p>Наш замерщик быстро и профессионально выполнит свою работу, покажет Вам образцы и сможет по месту заключить
+            контракт. Но мы так же можем изготовить окна по вашим замерам</p>
         </div>
         <div class="questions__question">
           <h5>Хотелось бы отделать балкон. Поможете?</h5>
@@ -567,8 +568,82 @@
 
 
     </section>
+    <section class="contacts-block__container container">
+      <h2 class="section__title">Контакты</h2>
+      <div class="contacts-block__content">
+        <div class="contacts-block__contacts">
+          <h6 class="contacts-block__title">Бесплатная консультация:</h6>
+          <div class="contacts-block__tel-container">
+            <img src="img/main/contacts/tel_logo.png" alt="tel_logo">
+            <div>
+              <a class="contacts-block__tel" href="+38(057)123456">+38(057)123456</a>
+              <a class="contacts-block__tel" href="+38(057)654321">+38(057)654321</a>
+            </div>
 
+          </div>
+          <div class="contacts-block__address-container">
+            <img src="img/main/contacts/map_logo.png" alt="map_logo">
+            <p class="contacts-block__address">г. Великий, ул. Победная, д.11, оф.6</p>
+          </div>
+          <div class="contacts-block__mail-container">
+            <img src="img/main/contacts/mail_logo.png" alt="mail_logo">
+            <a class="contacts-block__mail" href="mailto: okna@haus.ua">okna@haus.ua</a>
+          </div>
+          <p class="contacts-block__edification">
+            Установку должны выполнять только эксперты. Нам доверяют сотни семей.
+            Узнайте поробнее, какие решения вам подходят. <br>
+            Вы можете приобрести недорогие товары
+            при гарантированно
+            высоком качестве.
+          </p>
+          <div class="contacts-block__socials">
+            <a href="#"><img src="img/main/contacts/facebook_logo.png" alt="facebook_logo"></a>
+            <a href="#"><img src="img/main/contacts/instagram_logo.png" alt="instagram_logo"></a>
+            <a href="#"><img src="img/main/contacts/telegram_logo.png" alt="telegram_logo"></a>
+            <a href="#"><img src="img/main/contacts/youtube_logo.png" alt="youtube_logo"></a>
+          </div>
+
+        </div>
+        <div class="contacts-block__questions">
+          <h3 class="contacts-block__title">Остались вопросы?</h3>
+          <div class="contacts-block__form">
+            <form action="#" name="user" method="post">
+              <div class="contacts-block__inputs">
+                <label>
+                  <input type="text" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input type="email" placeholder="E-mail">
+                </label>
+                <label>
+                  <textarea placeholder="Ваш отзыв"></textarea>
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox">
+                  <div class="checkblock__agree">Я согласен(на) на обработку <span>персональных данных</span>
+                  </div>
+                </label>
+
+                <div class="contacts-block__button"><input type="submit" value="Оставить отзыв">
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+
+        </div>
+        <div class="contacts-block__bg"><img src="img/main/contacts/employee.png" alt="employee"></div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo"><img src="img/footer/footer_logo.png" alt="logo"></div>
+      <p class="footer__text">&copy; ООО “Окна Хаус”, 2011 - 2022</p>
+    </div>
+
+  </footer>
 </div>
 <div class="popup request-popup" data-popup="froze">
   <div class="popup__body request-popup__body" data-closeArea="">
@@ -581,16 +656,16 @@
         <form action="#" name="user" method="post">
           <div class="request-popup__inputs">
             <label>
-              <input type="text" placeholder="Ваше имя">
+              <input name="name" type="text" placeholder="Ваше имя">
             </label>
             <label>
-              <input type="number" placeholder="Номер телефона">
+              <input name="tel" type="number" placeholder="Номер телефона">
             </label>
             <label>
-              <input type="email" placeholder="E-mail">
+              <input name="email" type="email" placeholder="E-mail">
             </label>
             <label class="checkbox-container">
-              <input type="checkbox">
+              <input name="checkbox" type="checkbox">
               <div class="checkblock__agree">Я согласен(на) на обработку <span class="checkblock__agree-span">персональных данных</span>
               </div>
             </label>
@@ -616,16 +691,16 @@
         <form action="#" name="user" method="post">
           <div class="request-popup__inputs">
             <label>
-              <input type="text" placeholder="Ваше имя">
+              <input name="name" type="text" placeholder="Ваше имя">
             </label>
             <label>
-              <input type="number" placeholder="Номер телефона">
+              <input name="tel" type="number" placeholder="Номер телефона">
             </label>
             <label>
-              <input type="email" placeholder="E-mail">
+              <input name="email" type="email" placeholder="E-mail">
             </label>
             <label class="checkbox-container">
-              <input type="checkbox">
+              <input name="checkbox" type="checkbox">
               <div class="checkblock__agree">Я согласен(на) на обработку <span class="checkblock__agree-span--calc">персональных данных</span>
               </div>
             </label>
@@ -1010,22 +1085,22 @@
       <h3 class="review-popup__title"><img class="review-popup__ico" src="img/main/about/review-logo-orange.svg"
                                            alt="review-logo">Добавьте Ваш отзыв</h3>
       <div class="review-popup__form">
-        <form action="#" name="user" method="post">
+        <form name="user">
           <div class="review-popup__inputs">
             <label>
-              <input type="text" placeholder="Ваше имя">
+              <input name="name" type="text" placeholder="Ваше имя">
             </label>
             <label>
-              <input type="number" placeholder="Номер телефона">
+              <input name="contract" type="number" placeholder="Номер договора">
             </label>
             <label>
-              <input type="email" placeholder="E-mail">
+              <input name="email" type="email" placeholder="E-mail">
             </label>
             <label>
-              <textarea placeholder="Ваш отзыв"></textarea>
+              <textarea name="review" placeholder="Ваш отзыв"></textarea>
             </label>
             <label class="checkbox-container">
-              <input type="checkbox">
+              <input type="checkbox" name="checkbox">
               <div class="checkblock__agree">Я согласен(на) на обработку персональных данных
               </div>
             </label>
@@ -1038,6 +1113,9 @@
       </div>
     </div>
   </div>
+</div>
+<div class="message-popup">
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
