@@ -112,6 +112,7 @@ header {
   margin-right: 20px;
   white-space: nowrap;
   z-index: 100;
+  user-select: none;
 }
 
 .nav__links li + li {
@@ -120,6 +121,7 @@ header {
 
 li {
   position: relative;
+  user-select: none;
 }
 
 .nav__links li:hover {
@@ -1578,6 +1580,65 @@ input::-webkit-inner-spin-button {
   font-size: 13px;
 }
 
+
+/*------------SERVICES-SLIDER------------------------------------------*/
+.services-popup__carousel-block img {
+  width: 100%;
+  height: 230px;
+}
+
+.services-popup__carousel-block {
+  position: relative;
+  width: 307px;
+  height: 230px;
+  margin: 0 auto 0 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.services-slider {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.services-slider .slick-list {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.services-slider .slick-track {
+  display: flex;
+  gap: 11px;
+}
+
+.services-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.services-slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.services-slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.services-slider .slick-dots li.slick-active button {
+  background-color: #EF7F1A;
+}
+
 /*--------------REVIEWS-POPUP-------------------------------------------*/
 .review-popup__content {
   max-width: 595px;
@@ -1676,59 +1737,6 @@ input::-webkit-inner-spin-button {
 }
 
 /*---------SLIDER----------------------------------------------------------------------------------------------------*/
-.services-popup__carousel-block img {
-  width: 100%;
-  height: 230px;
-}
-
-.services-popup__carousel-block {
-  position: relative;
-  width: 307px;
-  height: 230px;
-  margin: 0 auto 0 0;
-  background-color: white;
-}
-
-
-.slider-list {
-  list-style-type: none;
-  position: relative;
-
-}
-
-.slider-element {
-  width: 100%;
-  height: 100%;
-  transition: opacity 1s ease-in;
-  opacity: 0;
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  display: block;
-}
-
-div.slider-dots {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  z-index: 3;
-  text-align: center;
-}
-
-span.dot {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  padding: 0;
-  display: inline-block;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .message-popup {
 
   position: fixed;

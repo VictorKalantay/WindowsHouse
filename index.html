@@ -200,7 +200,7 @@
           <li class="bookmark bookmark--products">Эксклюзив</li>
         </ul>
         <div class="card__container card__container--products active">
-          <div class="card__img"><img src="img/main/products/bg_standard.png" alt="bg"></div>
+          <div class="card__img"><img src="img/main/products/bg_standard.png" alt="bg" ></div>
           <div class="card__content">
             <h3 class="card__content-title">Rehau Blitz New</h3>
             <p class="card__content-text">Сохраняют тепло в доме, защищают от шума и вписываются в любой интерьер.
@@ -576,8 +576,8 @@
           <div class="contacts-block__tel-container">
             <img src="img/main/contacts/tel_logo.png" alt="tel_logo">
             <div>
-              <a class="contacts-block__tel" href="+38(057)123456">+38(057)123456</a>
-              <a class="contacts-block__tel" href="+38(057)654321">+38(057)654321</a>
+              <a class="contacts-block__tel" href="tel:+38(057)123456">+38(057)123456</a>
+              <a class="contacts-block__tel" href="tel:+38(057)654321">+38(057)654321</a>
             </div>
 
           </div>
@@ -645,7 +645,8 @@
 
   </footer>
 </div>
-<div class="popup request-popup" data-popup="froze">
+<div class="popups">
+  <div class="popup request-popup" data-popup="froze">
   <div class="popup__body request-popup__body" data-closeArea="">
     <div class="popup__content request-popup__content request-popup__content--froze ">
       <a class="popup__close request-popup__close" data-close=""><img src="img/header/close_logo.png" alt="close"></a>
@@ -679,443 +680,438 @@
     </div>
   </div>
 </div>
-<div class="popup request-popup" data-popup="calc">
-  <div class="popup__body request-popup__body" data-closeArea="">
-    <div class="popup__content request-popup__content">
-      <a class="popup__close request-popup__close" data-close="" href="#"><img src="img/header/close_logo.png"
-                                                                               alt="close"></a>
-      <h3 class="request-popup__title"><img class="request-popup__ico" src="img/header/calc_logo.svg" alt="calc">Заказать
-        расчет
-      </h3>
-      <div class="request-popup__form">
-        <form action="#" name="user" method="post">
-          <div class="request-popup__inputs">
-            <label>
-              <input name="name" type="text" placeholder="Ваше имя">
-            </label>
-            <label>
-              <input name="tel" type="number" placeholder="Номер телефона">
-            </label>
-            <label>
-              <input name="email" type="email" placeholder="E-mail">
-            </label>
-            <label class="checkbox-container">
-              <input name="checkbox" type="checkbox">
-              <div class="checkblock__agree">Я согласен(на) на обработку <span class="checkblock__agree-span--calc">персональных данных</span>
-              </div>
-            </label>
+  <div class="popup request-popup" data-popup="calc">
+    <div class="popup__body request-popup__body" data-closeArea="">
+      <div class="popup__content request-popup__content">
+        <a class="popup__close request-popup__close" data-close="" href="#"><img src="img/header/close_logo.png"
+                                                                                 alt="close"></a>
+        <h3 class="request-popup__title"><img class="request-popup__ico" src="img/header/calc_logo.svg" alt="calc">Заказать
+          расчет
+        </h3>
+        <div class="request-popup__form">
+          <form action="#" name="user" method="post">
+            <div class="request-popup__inputs">
+              <label>
+                <input name="name" type="text" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input name="tel" type="number" placeholder="Номер телефона">
+              </label>
+              <label>
+                <input name="email" type="email" placeholder="E-mail">
+              </label>
+              <label class="checkbox-container">
+                <input name="checkbox" type="checkbox">
+                <div class="checkblock__agree">Я согласен(на) на обработку <span class="checkblock__agree-span--calc">персональных данных</span>
+                </div>
+              </label>
 
-            <div class="request-popup__button"><input type="submit" value="Отправить"></div>
-          </div>
+              <div class="request-popup__button"><input type="submit" value="Отправить"></div>
+            </div>
 
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="popup services-popup" data-popup="install">
-  <div class="popup__body services-popup__body" data-closeArea="">
-    <div class="popup__content services-popup__content">
-      <a class="popup__close services-popup__close" data-close="" href="#"><img
-        src="img/main/services/popup/close_logo.svg" alt="close"></a>
-      <img class="services-popup__background-img" src="img/main/services/popup/background.png" alt="bg">
-      <div class="services-popup__carousel-block" id="install">
-        <ul class="slider-list">
-          <li><img src="img/main/services/popup/carousel/background.png" alt="screen"></li> <!-- это экран -->
-          <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
-        </ul>
-        <div class="slider-dots"></div>
-      </div>
-      <div class="services-popup__bid-block">
-        <h3 class="services-popup__title">Установка пластиковых окон</h3>
-        <p class="services-popup__text">
-          Пластиковые окна Rehau <br>
-          от проверенного производителя с <br>
-          гарантией качества</p>
-        <div class="buttons-block">
-          <div class="button button--froze" data-popuplink="froze">
-            <img src="img/header/froze_logo.svg" alt="froze">
-            <p>Заявка на замер</p>
-          </div>
-          <div class="button" data-popuplink="calc">
-            <img src="img/header/calc_logo.svg" alt="calc">
-            <p>Заказать расчет</p>
-          </div>
+          </form>
         </div>
-
       </div>
-      <ul class="services-popup__sentence-block">
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Пластиковые окна
-            </h4>
-            <p class="services-popup__sentence-text">Использование ламинационных окон, ламинации в массе, 3д-ламинации,
-              а также покраска окон.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Ламинация</h4>
-            <p class="services-popup__sentence-text">Пластиковые окна могут быть любого нужного вам цвета. Внутри и
-              снаружи.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Подоконники</h4>
-            <p class="services-popup__sentence-text">Качественный подоконник не царапается, выдерживает большие нагрузки
-              и будет служить вам долгие годы. </p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Цветные ручки</h4>
-            <p class="services-popup__sentence-text">Оригинальные оконные ручки подчеркнут дизайн окна. Подберем
-              оптимальный цвет ручек в зависимости от цвета всей конструкции.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Проветриватели</h4>
-            <p class="services-popup__sentence-text">Постоянное обновление воздуха
-              в комнате снижает риск аллергии, улучшает сон и благоприятно влияет
-              на самочувствие. </p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Москитные сетки</h4>
-            <p class="services-popup__sentence-text">Нежеланные насекомые останутся
-              на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.</p>
-          </div>
-        </li>
-
-      </ul>
     </div>
   </div>
-</div>
-<div class="popup services-popup" data-popup="loggias">
-  <div class="popup__body services-popup__body" data-closeArea="">
-    <div class="popup__content services-popup__content">
-      <a class="popup__close services-popup__close" data-close="" href="#"><img
-        src="img/main/services/popup/close_logo.svg" alt="close"></a>
-      <img class="services-popup__background-img" src="img/main/services/popup/bg_loggias.png" alt="bg">
-      <div class="services-popup__carousel-block" id="loggias">
-        <ul class="slider-list">
-          <li><img src="img/main/services/popup/carousel/background.png" alt="screen"></li> <!-- это экран -->
-          <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
-        </ul>
-        <div class="slider-dots"></div>
-      </div>
-      <div class="services-popup__bid-block">
-        <h3 class="services-popup__title">Остекление балконов и лоджий</h3>
-        <p class="services-popup__text">
-          Занимаемся остеклением и отделкой <br>
-          балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
-        <div class="buttons-block">
-          <div class="button button--froze" data-popuplink="froze">
-            <img src="img/header/froze_logo.svg" alt="froze">
-            <p>Заявка на замер</p>
-          </div>
-          <div class="button" data-popuplink="calc">
-            <img src="img/header/calc_logo.svg" alt="calc">
-            <p>Заказать расчет</p>
-          </div>
+  <div class="popup services-popup" data-popup="install">
+    <div class="popup__body services-popup__body" data-closeArea="">
+      <div class="popup__content services-popup__content">
+        <a class="popup__close services-popup__close" data-close="" href="#"><img
+          src="img/main/services/popup/close_logo.svg" alt="close"></a>
+        <img class="services-popup__background-img" src="img/main/services/popup/background.png" alt="bg">
+        <div class="services-popup__carousel-block" id="install">
+          <ul class="services-slider services-slider--install">
+            <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
+          </ul>
+          <div class="slider-dots"></div>
         </div>
-
-      </div>
-      <ul class="services-popup__sentence-block">
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Тёплое остекление
-            </h4>
-            <p class="services-popup__sentence-text">Теплое остекление — возможность сделать из балкона или лоджии
-              полноценное жилое помещение.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Холодное остекление
-            </h4>
-            <p class="services-popup__sentence-text">Холодное остекление рекомендовано в случаях, когда балкон или
-              лоджия используются для хранения вещей.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Панорамное остекление
-            </h4>
-            <p class="services-popup__sentence-text">Остекление от пола до потолка, дающее максимальное естественное
-              освещение
-              и прекрасный обзор окрестностей.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Остекление с выносом</h4>
-            <p class="services-popup__sentence-text">Способ увеличения площади и объема балкона или лоджии.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Остекление с крышей</h4>
-            <p class="services-popup__sentence-text">Строительство крыши для домов
-              с высоким потолком и квартир, расположенных на последних этажах. </p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Объединение с комнатой</h4>
-            <p class="services-popup__sentence-text">Перепланировка квартиры, дающая дополнительные метры полезной
-              площади и улучшающая жилищные условия.</p>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="popup services-popup" data-popup="cottages">
-  <div class="popup__body services-popup__body" data-closeArea="">
-    <div class="popup__content services-popup__content">
-      <a class="popup__close services-popup__close" data-close="" href="#"><img
-        src="img/main/services/popup/close_logo.svg" alt="close"></a>
-      <img class="services-popup__background-img" src="img/main/services/popup/bg_cottages.png" alt="bg">
-      <div class="services-popup__carousel-block" id="cottages">
-        <ul class="slider-list">
-          <li><img src="img/main/services/popup/carousel/background.png" alt="screen"></li> <!-- это экран -->
-          <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
-        </ul>
-        <div class="slider-dots"></div>
-      </div>
-      <div class="services-popup__bid-block">
-        <h3 class="services-popup__title">Остекление коттеджей и дач</h3>
-        <p class="services-popup__text">
-          Остекление и отделка под ключ:
-          от коттеджей <br>
-          и дач до террас
-          и беседок. Выделяем личного
-          технолога под каждый объект.</p>
-        <div class="buttons-block">
-          <div class="button button--froze" data-popuplink="froze">
-            <img src="img/header/froze_logo.svg" alt="froze">
-            <p>Заявка на замер</p>
-          </div>
-          <div class="button" data-popuplink="calc">
-            <img src="img/header/calc_logo.svg" alt="calc">
-            <p>Заказать расчет</p>
-          </div>
-        </div>
-
-      </div>
-      <ul class="services-popup__sentence-block">
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Цветные окна</h4>
-            <p class="services-popup__sentence-text">Использование ламинационных окон, ламинации в массе, 3д-ламинации,
-              а также покраска окон.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Фигурные окна</h4>
-            <p class="services-popup__sentence-text">Арочные окна, окна трапеции, треугольные окна, круглые и
-              многоугольные окна.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Алюминиевые конструкции</h4>
-            <p class="services-popup__sentence-text">Идеальный вариант для большой площади остекления: зимние сады,
-              террасы и т.п.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Деревянные окна</h4>
-            <p class="services-popup__sentence-text">Экологичное и натуральное решение для остекления любого
-              объекта.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Портальные решения</h4>
-            <p class="services-popup__sentence-text">Эксклюзивные дверные и балконные раздвижные
-              конструкции для элитных квартир и респектабельных
-              домов, обеспечивающие панорамный вид
-              и экономящие пространство.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Рольставни и ворота</h4>
-            <p class="services-popup__sentence-text">Защитные рольставни
-              для частных домов,
-              роллетные ворота.</p>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="popup services-popup" data-popup="corp">
-  <div class="popup__body services-popup__body" data-closeArea="">
-    <div class="popup__content services-popup__content">
-      <a class="popup__close services-popup__close" data-close="" href="#"><img
-        src="img/main/services/popup/close_logo.svg" alt="close"></a>
-      <img class="services-popup__background-img" src="img/main/services/popup/bg_corp.png" alt="bg">
-      <div class="services-popup__carousel-block" id="corp">
-        <ul class="slider-list">
-          <li><img src="img/main/services/popup/carousel/background.png" alt="screen"></li> <!-- это экран -->
-          <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
-          <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
-        </ul>
-        <div class="slider-dots"></div>
-      </div>
-      <div class="services-popup__bid-block">
-        <h3 class="services-popup__title">Остекление корпоративных объектов</h3>
-        <p class="services-popup__text">
-          Реализуем сложные проекты <br>
-          по остеклению торговых центров,
-          ресторанов, производственных помещений и офисов.</p>
-        <div class="buttons-block">
-          <div class="button button--froze" data-popuplink="froze">
-            <img src="img/header/froze_logo.svg" alt="froze">
-            <p>Заявка на замер</p>
-          </div>
-          <div class="button" data-popuplink="calc">
-            <img src="img/header/calc_logo.svg" alt="calc">
-            <p>Заказать расчет</p>
-          </div>
-        </div>
-
-      </div>
-      <ul class="services-popup__sentence-block">
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Многоквартирные дома</h4>
-            <p class="services-popup__sentence-text">Изготовление и монтаж окон ПВХ
-              под ключ. Приглашаем к партнерству
-              застройщиков.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Офисные помещения</h4>
-            <p class="services-popup__sentence-text">Установка пластиковых окон,
-              офисных перегородок и
-              дверей и входных групп.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Социальные объекты</h4>
-            <p class="services-popup__sentence-text">Остекляем детские сады,
-              школы, медицинские учреждения.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Объекты торговли</h4>
-            <p class="services-popup__sentence-text">Способ увеличения площади и объема балкона или лоджии.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Спортивные объекты
-            </h4>
-            <p class="services-popup__sentence-text">Остекляем спортивные залы,
-              бассейны, крытые спорткомплексы.</p>
-          </div>
-        </li>
-        <li class="services-popup__sentence-container">
-          <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
-          <div class="services-popup__sentence-card">
-            <h4 class="services-popup__sentence-title">Производственные помещения</h4>
-            <p class="services-popup__sentence-text">Устанавливаем окна для складских
-              и промышленных зданий в соответствии
-              с требованиями бизнеса.</p>
-          </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="popup review-popup" data-popup="review">
-  <div class="popup__body review-popup__body" data-closeArea="">
-    <div class="popup__content review-popup__content">
-      <a class="popup__close review-popup__close" data-close=""><img src="img/main/services/popup/close_logo.svg"
-                                                                     alt="close"></a>
-      <h3 class="review-popup__title"><img class="review-popup__ico" src="img/main/about/review-logo-orange.svg"
-                                           alt="review-logo">Добавьте Ваш отзыв</h3>
-      <div class="review-popup__form">
-        <form name="user">
-          <div class="review-popup__inputs">
-            <label>
-              <input name="name" type="text" placeholder="Ваше имя">
-            </label>
-            <label>
-              <input name="contract" type="number" placeholder="Номер договора">
-            </label>
-            <label>
-              <input name="email" type="email" placeholder="E-mail">
-            </label>
-            <label>
-              <textarea name="review" placeholder="Ваш отзыв"></textarea>
-            </label>
-            <label class="checkbox-container">
-              <input type="checkbox" name="checkbox">
-              <div class="checkblock__agree">Я согласен(на) на обработку персональных данных
-              </div>
-            </label>
-
-            <div class="review-popup__button"><input type="submit" value="Оставить отзыв">
+        <div class="services-popup__bid-block">
+          <h3 class="services-popup__title">Установка пластиковых окон</h3>
+          <p class="services-popup__text">
+            Пластиковые окна Rehau <br>
+            от проверенного производителя с <br>
+            гарантией качества</p>
+          <div class="buttons-block">
+            <div class="button button--froze" data-popuplink="froze">
+              <img src="img/header/froze_logo.svg" alt="froze">
+              <p>Заявка на замер</p>
+            </div>
+            <div class="button" data-popuplink="calc">
+              <img src="img/header/calc_logo.svg" alt="calc">
+              <p>Заказать расчет</p>
             </div>
           </div>
 
-        </form>
+        </div>
+        <ul class="services-popup__sentence-block">
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Пластиковые окна
+              </h4>
+              <p class="services-popup__sentence-text">Использование ламинационных окон, ламинации в массе, 3д-ламинации,
+                а также покраска окон.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Ламинация</h4>
+              <p class="services-popup__sentence-text">Пластиковые окна могут быть любого нужного вам цвета. Внутри и
+                снаружи.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Подоконники</h4>
+              <p class="services-popup__sentence-text">Качественный подоконник не царапается, выдерживает большие нагрузки
+                и будет служить вам долгие годы. </p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Цветные ручки</h4>
+              <p class="services-popup__sentence-text">Оригинальные оконные ручки подчеркнут дизайн окна. Подберем
+                оптимальный цвет ручек в зависимости от цвета всей конструкции.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Проветриватели</h4>
+              <p class="services-popup__sentence-text">Постоянное обновление воздуха
+                в комнате снижает риск аллергии, улучшает сон и благоприятно влияет
+                на самочувствие. </p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Москитные сетки</h4>
+              <p class="services-popup__sentence-text">Нежеланные насекомые останутся
+                на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.</p>
+            </div>
+          </li>
+
+        </ul>
       </div>
     </div>
   </div>
-</div>
-<div class="message-popup">
+  <div class="popup services-popup" data-popup="loggias">
+    <div class="popup__body services-popup__body" data-closeArea="">
+      <div class="popup__content services-popup__content">
+        <a class="popup__close services-popup__close" data-close="" href="#"><img
+          src="img/main/services/popup/close_logo.svg" alt="close"></a>
+        <img class="services-popup__background-img" src="img/main/services/popup/bg_loggias.png" alt="bg">
+        <div class="services-popup__carousel-block" id="loggias">
+          <ul class="services-slider services-slider--loggias">
+            <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
+          </ul>
+          <div class="slider-dots"></div>
+        </div>
+        <div class="services-popup__bid-block">
+          <h3 class="services-popup__title">Остекление балконов и лоджий</h3>
+          <p class="services-popup__text">
+            Занимаемся остеклением и отделкой <br>
+            балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
+          <div class="buttons-block">
+            <div class="button button--froze" data-popuplink="froze">
+              <img src="img/header/froze_logo.svg" alt="froze">
+              <p>Заявка на замер</p>
+            </div>
+            <div class="button" data-popuplink="calc">
+              <img src="img/header/calc_logo.svg" alt="calc">
+              <p>Заказать расчет</p>
+            </div>
+          </div>
 
+        </div>
+        <ul class="services-popup__sentence-block">
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Тёплое остекление
+              </h4>
+              <p class="services-popup__sentence-text">Теплое остекление — возможность сделать из балкона или лоджии
+                полноценное жилое помещение.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Холодное остекление
+              </h4>
+              <p class="services-popup__sentence-text">Холодное остекление рекомендовано в случаях, когда балкон или
+                лоджия используются для хранения вещей.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Панорамное остекление
+              </h4>
+              <p class="services-popup__sentence-text">Остекление от пола до потолка, дающее максимальное естественное
+                освещение
+                и прекрасный обзор окрестностей.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Остекление с выносом</h4>
+              <p class="services-popup__sentence-text">Способ увеличения площади и объема балкона или лоджии.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Остекление с крышей</h4>
+              <p class="services-popup__sentence-text">Строительство крыши для домов
+                с высоким потолком и квартир, расположенных на последних этажах. </p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Объединение с комнатой</h4>
+              <p class="services-popup__sentence-text">Перепланировка квартиры, дающая дополнительные метры полезной
+                площади и улучшающая жилищные условия.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="popup services-popup" data-popup="cottages">
+    <div class="popup__body services-popup__body" data-closeArea="">
+      <div class="popup__content services-popup__content">
+        <a class="popup__close services-popup__close" data-close="" href="#"><img
+          src="img/main/services/popup/close_logo.svg" alt="close"></a>
+        <img class="services-popup__background-img" src="img/main/services/popup/bg_cottages.png" alt="bg">
+        <div class="services-popup__carousel-block" id="cottages">
+          <ul class="services-slider services-slider--cottages">
+            <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
+          </ul>
+          <div class="slider-dots"></div>
+        </div>
+        <div class="services-popup__bid-block">
+          <h3 class="services-popup__title">Остекление коттеджей и дач</h3>
+          <p class="services-popup__text">
+            Остекление и отделка под ключ:
+            от коттеджей <br>
+            и дач до террас
+            и беседок. Выделяем личного
+            технолога под каждый объект.</p>
+          <div class="buttons-block">
+            <div class="button button--froze" data-popuplink="froze">
+              <img src="img/header/froze_logo.svg" alt="froze">
+              <p>Заявка на замер</p>
+            </div>
+            <div class="button" data-popuplink="calc">
+              <img src="img/header/calc_logo.svg" alt="calc">
+              <p>Заказать расчет</p>
+            </div>
+          </div>
+
+        </div>
+        <ul class="services-popup__sentence-block">
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Цветные окна</h4>
+              <p class="services-popup__sentence-text">Использование ламинационных окон, ламинации в массе, 3д-ламинации,
+                а также покраска окон.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Фигурные окна</h4>
+              <p class="services-popup__sentence-text">Арочные окна, окна трапеции, треугольные окна, круглые и
+                многоугольные окна.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Алюминиевые конструкции</h4>
+              <p class="services-popup__sentence-text">Идеальный вариант для большой площади остекления: зимние сады,
+                террасы и т.п.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Деревянные окна</h4>
+              <p class="services-popup__sentence-text">Экологичное и натуральное решение для остекления любого
+                объекта.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Портальные решения</h4>
+              <p class="services-popup__sentence-text">Эксклюзивные дверные и балконные раздвижные
+                конструкции для элитных квартир и респектабельных
+                домов, обеспечивающие панорамный вид
+                и экономящие пространство.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Рольставни и ворота</h4>
+              <p class="services-popup__sentence-text">Защитные рольставни
+                для частных домов,
+                роллетные ворота.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="popup services-popup" data-popup="corp">
+    <div class="popup__body services-popup__body" data-closeArea="">
+      <div class="popup__content services-popup__content">
+        <a class="popup__close services-popup__close" data-close="" href="#"><img
+          src="img/main/services/popup/close_logo.svg" alt="close"></a>
+        <img class="services-popup__background-img" src="img/main/services/popup/bg_corp.png" alt="bg">
+        <div class="services-popup__carousel-block" id="corp">
+          <ul class="services-slider services-slider--corp">
+            <li class="slider-element"><img src="img/main/services/popup/carousel/3.png" alt="3"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/4.png" alt="4"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/1.png" alt="1"></li>
+            <li class="slider-element"><img src="img/main/services/popup/carousel/2.png" alt="2"></li>
+          </ul>
+          <div class="slider-dots"></div>
+        </div>
+        <div class="services-popup__bid-block">
+          <h3 class="services-popup__title">Остекление корпоративных объектов</h3>
+          <p class="services-popup__text">
+            Реализуем сложные проекты <br>
+            по остеклению торговых центров,
+            ресторанов, производственных помещений и офисов.</p>
+          <div class="buttons-block">
+            <div class="button button--froze" data-popuplink="froze">
+              <img src="img/header/froze_logo.svg" alt="froze">
+              <p>Заявка на замер</p>
+            </div>
+            <div class="button" data-popuplink="calc">
+              <img src="img/header/calc_logo.svg" alt="calc">
+              <p>Заказать расчет</p>
+            </div>
+          </div>
+
+        </div>
+        <ul class="services-popup__sentence-block">
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/1.svg" alt="1"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Многоквартирные дома</h4>
+              <p class="services-popup__sentence-text">Изготовление и монтаж окон ПВХ
+                под ключ. Приглашаем к партнерству
+                застройщиков.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/2.svg" alt="2"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Офисные помещения</h4>
+              <p class="services-popup__sentence-text">Установка пластиковых окон,
+                офисных перегородок и
+                дверей и входных групп.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/3.svg" alt="3"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Социальные объекты</h4>
+              <p class="services-popup__sentence-text">Остекляем детские сады,
+                школы, медицинские учреждения.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/4.svg" alt="4"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Объекты торговли</h4>
+              <p class="services-popup__sentence-text">Способ увеличения площади и объема балкона или лоджии.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/5.svg" alt="5"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Спортивные объекты
+              </h4>
+              <p class="services-popup__sentence-text">Остекляем спортивные залы,
+                бассейны, крытые спорткомплексы.</p>
+            </div>
+          </li>
+          <li class="services-popup__sentence-container">
+            <div class="services-popup__sentence-logo"><img src="img/main/services/popup/sentence/6.svg" alt="6"></div>
+            <div class="services-popup__sentence-card">
+              <h4 class="services-popup__sentence-title">Производственные помещения</h4>
+              <p class="services-popup__sentence-text">Устанавливаем окна для складских
+                и промышленных зданий в соответствии
+                с требованиями бизнеса.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="popup review-popup" data-popup="review">
+    <div class="popup__body review-popup__body" data-closeArea="">
+      <div class="popup__content review-popup__content">
+        <a class="popup__close review-popup__close" data-close=""><img src="img/main/services/popup/close_logo.svg"
+                                                                       alt="close"></a>
+        <h3 class="review-popup__title"><img class="review-popup__ico" src="img/main/about/review-logo-orange.svg"
+                                             alt="review-logo">Добавьте Ваш отзыв</h3>
+        <div class="review-popup__form">
+          <form name="user">
+            <div class="review-popup__inputs">
+              <label>
+                <input name="name" type="text" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input name="contract" type="number" placeholder="Номер договора">
+              </label>
+              <label>
+                <input name="email" type="email" placeholder="E-mail">
+              </label>
+              <label>
+                <textarea name="review" placeholder="Ваш отзыв"></textarea>
+              </label>
+              <label class="checkbox-container">
+                <input type="checkbox" name="checkbox">
+                <div class="checkblock__agree">Я согласен(на) на обработку персональных данных
+                </div>
+              </label>
+
+              <div class="review-popup__button"><input type="submit" value="Оставить отзыв">
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="message-popup"></div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
